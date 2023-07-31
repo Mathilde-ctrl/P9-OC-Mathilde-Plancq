@@ -13,19 +13,20 @@ body {
 	z-index: 1000;
 	display: flex;
 	justify-content: space-between;
+	
 	padding-inline: 100px;
-	padding-block: 30px;
+	padding-block: 15px;
 	align-items: center;
 }
 
 .top-header .name {
-	font-size: 26px;
+	font-size: 38px;
 }
 
 .nav ul {
 	display: flex;
 	list-style-type: none;
-	font-size: 14px;
+	font-size: 20px;
 	margin-bottom: 0;
 }
 
@@ -38,15 +39,24 @@ body {
 	color: #000
 }
 
+.nav li.logo{
+	height: 20px;
+	width: 20px;
+}
+
 .social-link img {
 	width: 20px;
+}
+
+.carrousel__image{
+	max-height: 888px;
 }
 
 #about {
 	display: flex;
 	background-color: #F6D2B8;
 	padding-inline: 100px;
-	padding-block: 100px;
+	padding-block: 50px;
 	position: relative;
 }
 
@@ -67,15 +77,10 @@ body {
 	z-index: 0;
 }
 
-.picture img {
-	width: 100%;
-
-}
 #about-me {
 	flex: 2
 }
 .about-me__title {
-	margin-top: 1em;
 	margin-bottom: 60px;
 	font-size: 30px;
 }
@@ -83,19 +88,33 @@ body {
 	font-family: 'Spectral';
 	font-weight: 800;
 	font-style: italic;
-	width: 60%;
-}
-#about-me p {
-	width: 80%;
-	font-size: 14px;
+
+	font-size: 18px;
+
+	width: 70%;
+	text-align: justify;
+	line-height: 1.8;
+	margin-bottom: 30px;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
+.about-me__introduction--text {
+	width: 80%;
+	font-size: 16px;
+	text-align: justify;
+	line-height: 1.6;
 }
+
+.about--picture{
+	width: 429px ;	
+}
+
 .title{
 	text-align: center;
-	padding-block: 2em;
+	padding-top:40px ;
+	font-size: 28px;
+	margin: 0;
+	z-index: 100;
+	position: relative;
 }
 .gallery .nav {
 	justify-content: center;
@@ -121,8 +140,8 @@ body {
 }
 .gallery-item {
 	position: absolute;
-	width: 100%;
-	height: 100%;
+	width: 440px;
+	height: 440px;
 	object-fit: cover;
 	padding: .5em;
 }
@@ -147,6 +166,7 @@ body {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 40px;
 
 }
 .quote__author {
@@ -188,6 +208,18 @@ body {
 	flex-direction: column;
 	justify-content: space-between;
 	z-index: 1;
+}
+.service__description--title{
+	font-size: 24px;
+}
+
+.service__price--price{
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.service__price--detail{
+	font-size: 16px;
 }
 
 #contact {
@@ -244,6 +276,20 @@ input[type="submit"] {
 	padding: .5em 1em
 }
 
+.contact__picture{
+	width: 392px;
+}
+
+
+@media all and (max-width: 1500px ){
+	.carrousel__image{
+		height: 665px ;
+	}
+
+
+}
+
+/*---------------------------------------------------------------*/
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
@@ -258,16 +304,39 @@ input[type="submit"] {
 	#about-me h6, #about-me p {
 		width: 100%;
 	}
+	.quote__text{
+		font-size: 24px;
+	}
+
+	.carrousel__image{
+		height:473px ;
+	}
+
+	.gallery-item {
+		width: 320px;
+		height: 320px;
+	}
 }
 
+
+/*---------------------------------------------------------------*/
 @media all and (max-width: 1000px) {
+
+	.top-header{
+		padding: 15px 25px;
+	}
+
+	.top-header .nav li {
+		font-size: 16px;
+	}
 	#about{
 		flex-direction: column;
+	}
+	
+	.carrousel__image{
+		height:355px ;
+	}
 
-	}
-	.picture {
-		width: 50%;
-	}
 	.picture.left::before {
 		width: 100%;
 		height: 30%;
@@ -295,7 +364,7 @@ input[type="submit"] {
 	}
 
 	#services .container::before{
-		width: 30%;
+		width: 20%;
 		height: 100%;
 		bottom: 0;
 		right: 0;
@@ -309,6 +378,11 @@ input[type="submit"] {
 	#contact .picture.right {
 		margin-top: 1em;
 	}
+	
+	.contact__picture{
+		width: 272px;
+	}
+
 	.picture.right::before {
 		width: 100%;
 		height: 30%;
@@ -317,21 +391,33 @@ input[type="submit"] {
 		right: 0;
 		z-index: -1;
 	}
+
+	.gallery-item {
+		width: 240px;
+		height: 240px;
+	}
 }
 
+
+/*---------------------------------------------------------------*/
 @media all and (max-width: 650px) {
 	.top-header {
 		flex-direction: column;
 		padding-inline: 0;
+		padding:10px
 	}
 	.top-header .nav, .top-header .nav ul {
 		width: 100%;
-		padding: 0 0 0 0;
+		padding: 0 0 0 5px;
+		
 	}
 	.top-header .nav li {
 		flex: 1;
 		padding-block: 1em;
+		padding:0 ;
 		text-align: center;
+		font-size: 14px;
+		
 	}
 	.picture.left::before, .picture.right::before {
 		height: 150px;
@@ -349,8 +435,50 @@ input[type="submit"] {
 	form {
 		width: 100%;
 	}
-	.picture {
-		width: 80%;
+	
+	.quote__text{
+		font-size: 22px;
+	}
+
+	.about--picture{
+		width: 240px ;	
+	}
+
+	.picture.right{
+		margin: 0;
+	}
+
+	.contact__picture{
+		width: 185px;
+	}
+
+	.carrousel__image{
+		height:196px ;
+	}
+
+	.gallery-item {
+		width: 425px;
+		height: 425px;
 	}
 }
 
+@media all and (max-width: 380px) {
+	.gallery-item {
+		width: 375px;
+		height: 375px;
+	}
+}
+
+@media all and (max-width: 345px) {
+
+	.carrousel__image{
+		height:147px ;
+	}
+	.about--picture{
+		width: 204px ;	
+	}
+	.gallery-item{
+		width: 320px;
+		height: 320px;
+	}
+}
