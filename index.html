@@ -2,17 +2,22 @@
 <html lang="fr">
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
-	<link rel="stylesheet" href="./assets/style.css">
+	<link rel="preload" href="./assets/bootstrap/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+	<link rel="preload" href="./assets/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap" rel="stylesheet">
 	<meta charset="UTF-8">
 	<script src="./assets/bootstrap/bootstrap.bundle.js"></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="./assets/maugallery.js"></script>
-	<script src="./assets/scripts.js"></script>
+	<script src="./assets/maugallery.js" ></script>
+	<script src="./assets/scripts.js" ></script>
 	<title>Nina Cardunni</title>
+	<meta name="description" content="Nina Cardunni, photographe qui 
+			capture les émotions et saisit des merveilleux moments pour les 
+			rendre immortels, afin que vous puissiez y puiser de l’amour, du 
+			bonheur, de la tendresse et de lumière à chaque fois que vous 
+			poserez les yeux sur vos photos. "/>
 </head>
 <body>
 	<header class="top-header">
@@ -62,7 +67,7 @@
 			<img src="./assets/images/nina.webP" alt="Portrait de Nina Carducci" class="about--picture">
 		</div>
 		<div id="about-me">
-			<h1 class="about-me__title">A propos de moi</h1>
+			<h2 class="about-me__title">A propos de moi</h2>
 			<p class="about-me__introduction">Devenir photographe était pour moi une évidence. 
 																				Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, 
 																				un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.
@@ -77,7 +82,7 @@
 		</div>
 	</article>
 	<section id="gallery">
-		<h1 class="title">Portfolio</h1>
+		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
 				<img data-gallery-tag="Concert" class="gallery-item" src="./assets/images/gallery/concerts/aaron-paul-concert.webP" alt="Salle de concert avec projecteur lumière rouge" />
@@ -103,7 +108,7 @@
 		</div>
 	</section>
 	<section id="services">
-		<h1 class="title">Mes services</h1>
+		<h2 class="title">Mes services</h2>
 		<div class="container">
 			<article class="service">
 				<div class="service__description">
