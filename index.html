@@ -12,12 +12,21 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="./assets/maugallery.js" ></script>
 	<script src="./assets/scripts.js" ></script>
-	<title>Nina Cardunni</title>
+	<title>Nina Cardunni - Photographe portrait et événementiel à Bordeaux</title>
 	<meta name="description" content="Nina Cardunni, photographe qui 
 			capture les émotions et saisit des merveilleux moments pour les 
 			rendre immortels, afin que vous puissiez y puiser de l’amour, du 
 			bonheur, de la tendresse et de lumière à chaque fois que vous 
 			poserez les yeux sur vos photos. "/>
+
+	<!--Facebook and instagram meta -->
+	<meta property="og:title" content="Nina Cardunni - Photographe portrait et événementiel à Bordeaux">
+	<meta property="og:description" content="Portfolio de la photographe Nina Cardunni 
+				qui propose ces services pour capturer des moments immortels.">
+	<meta property="og:url" content="https://mathilde-ctrl.github.io/P9-OC-Mathilde-Plancq/" >
+	<meta property="og:image" content="https://mathilde-ctrl.github.io/P9-OC-Mathilde-Plancq/assets/images/nina.webP">
+	<meta property="og:type" content="website">
+
 </head>
 <body>
 	<header class="top-header">
@@ -67,18 +76,19 @@
 			<img src="./assets/images/nina.webP" alt="Portrait de Nina Carducci" class="about--picture">
 		</div>
 		<div id="about-me">
-			<h2 class="about-me__title">A propos de moi</h2>
+			<h2 class="about-me__title">Nina Carducci</h2>
 			<p class="about-me__introduction">Devenir photographe était pour moi une évidence. 
 																				Comme si j’y étais prédestiné. Saisir un moment, une émotion, une situation, 
 																				un endroit, une lumière et les rendre immortels, voilà ce qui me fait vibrer.
 			</p>
 			<p class="about-me__introduction--text" >	Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : 
 					le figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux, 
-					ou le partager au plus grand nombre.<br><br>
+					ou le partager au plus grand nombre.</p>
+			<br>
+			<p>
 					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, 
 					ma technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, 
-					de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.
-			</p>
+					de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 		</div>
 	</article>
 	<section id="gallery">
@@ -98,58 +108,58 @@
 		</div>
 		<div class="quote">
 			<figure>
-				<blockquote cite="https://sites.google.com/site/grandsphotographesdu20eme/avedon-richard">
-					<p class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est 
+				<blockquote cite="https://sites.google.com/site/grandsphotographesdu20eme/avedon-richard" itemscope itemtype="http://schema.org/Quotation">
+					<p class="quote__text" itemprop="text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est 
 						traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude n’existe pas en 
 						photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.</p>
 				</blockquote>
-				<figcaption class="quote__author">- Richard Avedon</figcaption>
+				<figcaption class="quote__author" itemprop="author">- Richard Avedon</figcaption>
 			</figure>
 		</div>
 	</section>
 	<section id="services">
 		<h2 class="title">Mes services</h2>
 		<div class="container">
-			<article class="service">
+			<article class="service" itemscope itemtype="http://schema.org/Service">
 				<div class="service__description">
-					<h2 class="service__description--title">Shooting photo</h2>
-					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
+					<h2 class="service__description--title" itemprop="name">Shooting photo</h2>
+					<p itemprop="description">Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en Île-de-France pour réaliser vos photos</p>
 				</div>
-				<div class="service__price">
-					<p class="service__price--price">350€/demi journée</p>
+				<div class="service__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<p class="service__price--price" itemprop="price">350€/demi journée</p>
 					<p class="service__price--detail">Matériel, déplacement inclus</p>
 				</div>
 			</article>
-			<article class="service">
+			<article class="service" itemscope itemtype="http://schema.org/Service">
 				<div class="service__description">
-					<h2 class="service__description--title">Retouches</h2>
-					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
+					<h2 class="service__description--title" itemprop="name">Retouches</h2>
+					<p itemprop="description">Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu optimal pour vos publications</p>
 				</div>
-				<div class="service__price">
-					<p class="service__price--price">50€/photo</p>
+				<div class="service__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<p class="service__price--price" itemprop="price">50€/photo</p>
 					<p class="service__price--detail">2 AR par photo</p>
 				</div>
 			</article>
-			<article class="service">
+			<article class="service" itemscope itemtype="http://schema.org/Service">
 				<div class="service__description">
-					<h2 class="service__description--title">Album photos</h2>
-					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
+					<h2 class="service__description--title" itemprop="name">Album photos</h2>
+					<p itemprop="description">Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un album photo personnalisé</p>
 				</div>
-				<div class="service__price">
-					<p class="service__price--price">400€ album A4</p>
+				<div class="service__price" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+					<p class="service__price--price" itemprop="price">400€ album A4</p>
 					<p class="service__price--detail">30 pages recto/verso</p>
 				</div>
 			</article>
 		</div>
 	</section>
-	<article class="quote">
+	<article class="quote" itemscope itemtype="http://schema.org/Quotation">
 		<figure>
-			<blockquote cite="https://stephanedenizot.com/un-jour-une-citation/">
+			<blockquote cite="https://stephanedenizot.com/un-jour-une-citation/" itemprop="text">
 				<p class="quote__text">De manière inconsciente, je crois, je guette 
 					un regard, une expression, des traits ou une nostalgie capable de 
 					résumer ou plus exactement de révéler une vie</p>
 			</blockquote>
-			<figcaption class="quote__author">- Steve McCurry</figcaption>
+			<figcaption class="quote__author" itemprop="author">- Steve McCurry</figcaption>
 		</figure>
 	</article>
 	<section id="contact">
@@ -175,8 +185,16 @@
 		</div>
 	</section>
 </main>
-<footer>
-	
-</footer>
+<footer itemscope itemtype="http://schema.org/Person">
+		<h2 class="footer--titre" itemprop="name">Nina Carducci</h2>
+		<a href="tel:0556677889" class="footer--telephone" itemprop="telephone">" Appelez moi au 05 56 67 78 89 " </a>	
+		<p class="footer--horaire">Du Lundi au Vendredi </p>
+		<p class="footer--horaire">De 10h à 19h </p>
+		<address class="footer--adresse" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> 
+			<span itemprop="streetAddress">68 Avenue Alsace-Lorraine</span>  
+			<span itemprop="postalCode">33200</span>
+			<span itemprop="addressLocality">Bordeaux</span>
+		</address>
+	</footer>
 </body>
 </html>
