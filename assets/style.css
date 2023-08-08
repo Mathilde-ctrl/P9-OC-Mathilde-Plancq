@@ -51,8 +51,9 @@ body {
 }
 
 .carrousel__image{
+	height:888px;
 	width: 100%;
-	height: 888px;
+
 	object-fit: cover;
 }
 
@@ -334,10 +335,10 @@ footer{
 	font-size: 16px;
 }
 
-/*------------------------------------------------*/
 @media all and (max-width: 1500px ){
 	.carrousel__image{
 		height: 665px ;
+		width: 100%;
 	}
 }
 
@@ -361,7 +362,8 @@ footer{
 	}
 
 	.carrousel__image{
-		height:473px ;
+		height:473px;
+		width: 100%;
 	}
 
 	.gallery-item {
@@ -387,6 +389,7 @@ footer{
 	
 	.carrousel__image{
 		height:355px ;
+		width: 100%;
 	}
 
 	.picture.left::before {
@@ -510,6 +513,7 @@ footer{
 
 	.carrousel__image{
 		height:196px ;
+		width: 100%;
 	}
 
 	.gallery-item {
@@ -546,6 +550,7 @@ footer{
 
 	.carrousel__image{
 		height:147px ;
+		width: 100%;
 	}
 	.about--picture{
 		width: 204px ;	
