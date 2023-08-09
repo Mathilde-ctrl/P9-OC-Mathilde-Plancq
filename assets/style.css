@@ -94,7 +94,7 @@ body {
 	font-display: swap;
 	font-weight: 800;
 	font-style: italic;
-
+	letter-spacing: 1px;
 	font-size: 18px;
 
 	width: 70%;
@@ -338,7 +338,6 @@ footer{
 @media all and (max-width: 1500px ){
 	.carrousel__image{
 		height: 665px ;
-		width: 100%;
 	}
 }
 
@@ -363,7 +362,6 @@ footer{
 
 	.carrousel__image{
 		height:473px;
-		width: 100%;
 	}
 
 	.gallery-item {
@@ -389,7 +387,6 @@ footer{
 	
 	.carrousel__image{
 		height:355px ;
-		width: 100%;
 	}
 
 	.picture.left::before {
@@ -513,7 +510,6 @@ footer{
 
 	.carrousel__image{
 		height:196px ;
-		width: 100%;
 	}
 
 	.gallery-item {
@@ -550,7 +546,6 @@ footer{
 
 	.carrousel__image{
 		height:147px ;
-		width: 100%;
 	}
 	.about--picture{
 		width: 204px ;	
