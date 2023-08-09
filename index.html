@@ -88,7 +88,7 @@
 			</button>
 		</div>
 	</section>
-	<article id="about">
+	<article id="about" role="region" aria-label="À propos de Nina Carducci">
 		<div class="picture left">
 			<img 
 				src="./assets/images/nina-desktop.webp" 
@@ -111,7 +111,7 @@
 					de la tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 		</div>
 	</article>
-	<section id="gallery">
+	<section id="gallery" role="region" aria-label="Galerie de Nina Carducci">
 		<h2 class="title">Portfolio</h2>
 		<div class="container py-3">
 			<div class="gallery" style="display: none">
@@ -126,7 +126,7 @@
 				<img data-gallery-tag="Entreprises" class="gallery-item" src="./assets/images/gallery/entreprise/mateus-campos-felipe-portrait.webP" alt="Portrait d'une femme souriant devant son ordinateur"/>
 			</div>
 		</div>
-		<article class="quote" itemscope itemtype="http://schema.org/Quotation">
+		<article class="quote" itemscope itemtype="http://schema.org/Quotation" aria-label="Citation de Richard Avedon">
 			<figure>
 				<blockquote cite="https://sites.google.com/site/grandsphotographesdu20eme/avedon-richard" >
 					<p class="quote__text" itemprop="text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un fait est 
@@ -137,7 +137,7 @@
 			</figure>
 		</article>
 	</section>
-	<section id="services">
+	<section id="services" aria-label="Mes services de photographie">
 		<h2 class="title">Mes services</h2>
 		<div class="container">
 			<article class="service" itemscope itemtype="http://schema.org/Service">
@@ -172,7 +172,7 @@
 			</article>
 		</div>
 	</section>
-	<article class="quote" itemscope itemtype="http://schema.org/Quotation">
+	<article class="quote" itemscope itemtype="http://schema.org/Quotation" aria-label="Citation de Stev McCurry">
 		<figure>
 			<blockquote cite="https://stephanedenizot.com/un-jour-une-citation/" itemprop="text">
 				<p class="quote__text">De manière inconsciente, je crois, je guette 
@@ -206,17 +206,15 @@
 	</section>
 </main>
 <footer itemscope itemtype="http://schema.org/LocalBusiness">
-		<h2 class="footer--titre" itemprop="name">Nina Carducci</h2>
-		<a href="tel:0556677889" class="footer--telephone" itemprop="telephone">05 56 67 78 89</a>	
-		<p class="footer--horaire" itemprop="openingHours" content="Lu-Ve 10:00 19:00">Du Lundi au Vendredi</p>
-		<p class="footer--horaire">De 10h à 19h</p>
-		<address class="footer--adresse" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> 
-			<span itemprop="streetAddress">68 Avenue Alsace-Lorraine</span>  
-			<span itemprop="postalCode">33200</span>
-			<span itemprop="addressLocality">Bordeaux</span>
-		</address>
-	</footer>
-
-
+	<h2 class="footer--titre" itemprop="name">Nina Carducci</h2>
+	<a href="tel:0556677889" class="footer--telephone" itemprop="telephone">05 56 67 78 89</a>	
+	<p class="footer--horaire" itemprop="openingHours" content="Lu-Ve 10:00 19:00">Du Lundi au Vendredi</p>
+	<p class="footer--horaire">De 10h à 19h</p>
+	<address class="footer--adresse" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"> 
+		<span itemprop="streetAddress">68 Avenue Alsace-Lorraine</span>  
+		<span itemprop="postalCode">33200</span>
+		<span itemprop="addressLocality">Bordeaux</span>
+	</address>
+</footer>
 </body>
 </html>
