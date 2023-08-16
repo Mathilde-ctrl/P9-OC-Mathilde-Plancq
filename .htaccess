@@ -1,3 +1,5 @@
+# Amélioration possible pour augmenter les performances du cache
+
 # BEGIN GZIP
 SetOutputFilter DEFLATE
 AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml application/x-javascript

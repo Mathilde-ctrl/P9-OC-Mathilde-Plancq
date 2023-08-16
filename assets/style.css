@@ -302,6 +302,7 @@ footer{
 
 .footer--titre{
 	margin-bottom: 40px;
+	
 }
 
 .footer--adresse{
@@ -453,6 +454,15 @@ footer{
 		width: 240px;
 		height: 240px;
 	}
+
+	footer{
+		padding: 3rem 3rem 3rem;
+	}
+
+	.footer--titre{
+		font-size: 22px;
+		
+	}
 }
 
 
@@ -524,7 +534,14 @@ footer{
 	}
 
 	footer{
-		padding: 2rem 0 2rem 0 ;
+		padding: 2rem 1rem 2rem 1rem ;
+		
+		
+	}
+
+	.footer--titre{
+		font-size: 18px;
+		
 		
 	}
 	
